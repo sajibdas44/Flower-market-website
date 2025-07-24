@@ -15,8 +15,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1)
+    box-shadow: 0 2px 4px ;
+    /* width: 1140px; */
     height: 82px; 
     box-sizing: border-box; 
 }
@@ -82,6 +83,62 @@
 }
 
 
+/* Banner Section Styles */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px; 
+    background-color: #f8f8f8; 
+    min-height: 461px; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.banner-content {
+    flex: 1; 
+    max-width: 50%; 
+    padding-right: 40px; 
+}
+
+.banner-content h1 {
+    font-size: 3.2em; 
+    margin-bottom: 5px; 
+    color: #000000;
+    line-height: 1.1; 
+    font-weight: bold;
+}
+
+.banner-content h1 {
+    margin-top: 0; 
+}
+
+.orange-text {
+    color: #E95A08; 
+}
+
+.banner-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 20px;
+    max-width: 500px; 
+}
+
+.banner-image {
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.banner-image img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -103,4 +160,36 @@
         flex-grow: 1; 
         justify-content: flex-start; 
     }
+
+     .banner {
+        flex-direction: column; 
+        padding: 30px 20px; 
+        min-height: auto; 
+    }
+
+    .banner-image {
+        order: -1; 
+        width: 100%; 
+        justify-content: center; 
+        margin-bottom: 20px; 
+    }
+
+    .banner-content {
+        max-width: 100%; 
+        padding-right: 0;
+        text-align: left; 
+    }
+
+    .banner-content h1 {
+        font-size: 2.2em;
+        text-align: left; 
+    }
+
+    .banner-content p {
+        font-size: 1em; 
+        text-align: left; 
+        max-width: 100%; 
+    }
 }
+
+
